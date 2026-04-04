@@ -1,16 +1,34 @@
-## Hi there 👋
+# Muratcan Ates
 
-<!--
-**muratcan-ates/muratcan-ates** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Computer Engineering student with a strong focus on building robust, scalable and intelligent software systems. Passionate about artificial intelligence, cloud technologies and automation. Committed to growing in these areas by contributing to data-driven, autonomous and forward-thinking projects.
 
-Here are some ideas to get you started:
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/muratcanates)
+[![Medium](https://img.shields.io/badge/-Medium-000000?style=flat&logo=medium&logoColor=white)](https://medium.com/@muratcanates)
+[![Google Dev](https://img.shields.io/badge/-g.dev-4285F4?style=flat&logo=google&logoColor=white)](https://g.dev/muratcanates)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🏆 Highlights
+
+| | |
+|---|---|
+| 🌍 | **GDG Turkey Core Team** — Community building & web development |
+| 🎮 | **Google Game and Application Academy** — Unity, Flutter, project management & entrepreneurship |
+| 🥇 | **1st Place @ Google Game Jam** — "Bimo", built in 48 hours |
+
+### 🛠️ Tech Stack
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+![Azure](https://img.shields.io/badge/-Microsoft%20Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![Tailwind](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![Unity](https://img.shields.io/badge/-Unity-000000?style=flat&logo=unity&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+
+### 📫 Connect
+
+Feel free to reach out - always open to collaboration, learning opportunities and interesting conversations.
