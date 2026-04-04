@@ -8,7 +8,7 @@ Computer Engineering student at Doğuş University with a strong focus on buildi
 
 ---
 
-### 🏆 Highlights
+###  Highlights
 
 | | |
 |---|---|
