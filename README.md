@@ -1,6 +1,6 @@
 # Muratcan Ates
 
-Computer Engineering student at Doğuş University with a strong focus on building robust, scalable and intelligent software systems. Passionate about artificial intelligence, cloud technologies and automation. Committed to growing in these areas by contributing to data-driven, autonomous and forward-thinking projects.
+Computer Engineering student at Dogus University with a strong focus on building robust, scalable and intelligent software systems. Passionate about artificial intelligence, cloud technologies and automation. Committed to growing in these areas by contributing to data-driven, autonomous and forward-thinking projects.
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/muratcanates)
 [![Medium](https://img.shields.io/badge/-Medium-000000?style=flat&logo=medium&logoColor=white)](https://medium.com/@muratcanates)
