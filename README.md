@@ -8,14 +8,6 @@ Computer Engineering student at Dogus University with a strong focus on building
 
 ---
 
-###  Highlights
-
-| | |
-|---|---|
-| 🌍 | **GDG Turkey Core Team** — Community building & web development |
-| 🎮 | **Google Game and Application Academy** — Unity, Flutter, project management & entrepreneurship |
-| 🥇 | **1st Place @ Google Game Jam** — "Bimo", built in 48 hours |
-
 ### 🛠️ Tech Stack
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
