@@ -1,0 +1,41 @@
+name: Refresh profile numbers
+
+on:
+  schedule:
+    - cron: "23 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install font tooling
+        run: python3 -m pip install --user --quiet fonttools==4.63.0
+
+      - name: Generate the numbers card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/refresh_metrics.py
+
+      - name: Commit when the numbers changed
+        run: |
+          if git diff --quiet -- assets/metrics.svg assets/metrics-mobile.svg; then
+            echo "Numbers are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/metrics.svg assets/metrics-mobile.svg
+          git commit -m "chore: refresh profile numbers"
+          git push
