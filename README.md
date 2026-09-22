@@ -33,9 +33,9 @@ I own the repository. My commits added the LLM provider layer, the analyst and r
 [Live demo (read-only, simulated data, deterministic stand-in for the model)](https://cloudsentinel-y5zh.onrender.com) / [API docs](https://cloudsentinel-y5zh.onrender.com/docs) / [Architecture](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/architecture.md) / [Eval scorecard](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/EVAL_SCORECARD.md) / [Limitations](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/LIMITATIONS.md)
 
 <details>
-<summary>Screen: the investigation room</summary>
+<summary>Screen: the operator dashboard (simulated data)</summary>
 <br />
-<img src="./assets/cloudsentinel-investigation.jpg" width="100%" alt="CloudSentinel investigation room: compute cost anomaly with z-score 3.61, fourteen days of evidence, the analyst narrative and the recommender's cautious option" />
+<img src="./assets/cloudsentinel-dashboard.jpg" width="100%" alt="CloudSentinel operator dashboard on simulated data: total spend 4,865.30 USD, two open signals, six proposals awaiting a human, 10,346.91 USD per month in approved savings, and the z-score sensitivity control" />
 </details>
 
 ### [DOU-Synapse](https://github.com/muratcan-ates/DOU-Synapse)
