@@ -100,7 +100,7 @@ def istanbul_nabiz():
         body.append(f'<circle cx="{x}" cy="{peak}" r="6" fill="{paper}"/>')
         body.append(label(name, x, peak - 78, 17, paper, anchor="middle"))
     body += [
-        label("İstanbul Nabız · Microsoft AI Innovators 2026", 80, 78, 17, muted),
+        label("İstanbul Nabız · Microsoft AI Engineering Internship 2026", 80, 78, 17, muted),
         text("Nabız", 74, 176, 104, paper, tracking=-2.5),
         text("MCP server + city agent over İstanbul's live open data", 80, 232, 26, muted),
         label("Every number carries its source and timestamp", 80, 540, 16, muted),

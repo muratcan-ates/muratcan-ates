@@ -59,17 +59,17 @@ Course isolation is enforced twice: first by an API membership check, then by Po
 <img src="./assets/dou-synapse-04-citation-context.jpg" width="49%" alt="DOU-Synapse citation context view showing the cited passage with its surrounding chunks" />
 </details>
 
-## Microsoft AI Innovators
+## Microsoft AI Engineering Internship
 
 ### [İstanbul Nabız](https://github.com/muratcan-ates/istanbul-nabiz)
 
 <a href="https://github.com/muratcan-ates/istanbul-nabiz"><img src="./assets/istanbul-nabiz-banner.jpg" width="100%" alt="İstanbul Nabız banner: a pulse line with beats labeled İSPARK, İETT, Metro, Traffic and Air" /></a>
 
-**Microsoft AI Innovators 2026** · Solo project · September 2026
+**Microsoft AI Engineering Internship, AI Innovators program** · Solo project · September 2026
 
-İstanbul Nabız is an unofficial MCP server over İstanbul's live open data. Its twelve tools cover İSPARK car parks, İETT bus positions and timetables, Metro İstanbul service status and station accessibility, the traffic index and air quality. Every result carries its source URL and fetch time. The tests start the server as a subprocess, perform the MCP handshake, check that all twelve tools are listed with usable schemas and call four of them end to end over stdio, the way a client would.
+İstanbul Nabız is an unofficial MCP server over İstanbul's live open data. Its fifteen tools cover İSPARK car parks, İETT bus positions and timetables, Metro İstanbul service status and station accessibility, the traffic index and air quality. Every result carries its source URL and fetch time. The tests start the server as a subprocess, perform the MCP handshake, check that every tool is listed with a usable schema and call several of them end to end over stdio, the way a client would.
 
-While building it I found that the municipality's GTFS `stop_times.csv` was cut off at Excel's row limit (1,048,575 rows plus a header) and had no rows at all for line 500T. Switching to the full export placed all 31 live 500T buses on their route. A local collector recorded 16,325 occupancy readings from 250 İSPARK car parks over five days to start answering "how full is it usually at this hour". Measured against 607 observed arrivals, most of them on line 500T, my first bus arrival estimator was off by 16.5 minutes on average; a per-line calibration fitted to the same data brings that to 12.4 minutes in-sample. Both are still too high, and the repository publishes them. The Azure infrastructure is written in Bicep and compiles in CI but is not deployed yet. This is an independent student project, not an official İBB service.
+While building it I found that the municipality's GTFS `stop_times.csv` was cut off at Excel's row limit (1,048,575 rows plus a header) and had no rows at all for line 500T. Switching to the full export placed all 31 live 500T buses on their route. Measured against 1,351 observed arrivals, the bus arrival estimate the tools serve is off by about 13 minutes on average. A per-line calibration looked better on the data it was fitted to but did worse on later arrivals (35.8 against 10.2 minutes), so the tools keep the untuned rate. Both results are still too high, and the repository publishes them. The Azure infrastructure is written in Bicep and compiles in CI but is not deployed yet. This is an independent student project, not an official İBB service.
 
 [Use it from an MCP client](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/mcp-usage.md) / [ETA accuracy report](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/eval/results/eta.md) / [Architecture](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/architecture.svg)
 
@@ -106,9 +106,10 @@ While building it I found that the municipality's GTFS `stop_times.csv` was cut 
 ## Experience and programs
 
 - **Data Engineering Intern, EPAM Systems** (Jul to Aug 2026): built a PostgreSQL data warehouse integrating two sales sources, with SQL ETL and a Power BI report.
-- **Microsoft AI Innovators, Microsoft Türkiye** (Jun to Jul 2026): the program behind İstanbul Nabız, above.
+- **AI Engineering Intern, Microsoft Türkiye** (Jun to Jul 2026): AI Innovators program; İstanbul Nabız, above, is my program project.
 - **Volunteer Software Developer, NanoSpace** (Jul 2025 to Sep 2026): SvelteKit front-end work for a research database within COST Action CA21126.
 - **IT and Network Infrastructure Intern** (Aug to Sep 2025): built an attendance-tracking app in C# WinForms and SQLite.
+- **TEI Aviation Engines School** (Havacılık Motorları Okulu, Jan to May 2026): 16-week program on gas turbines, engine controls, power systems, manufacturing and testing, completed with a certificate of achievement.
 - Google AI and Technology Academy, Data Science Fellow (2025 to 2026) · Huawei Cloud AI Bootcamp (2025) · Microsoft Learn Student Ambassador · GDG on Campus Doğuş core team, web development
 
 ## Toolchain
