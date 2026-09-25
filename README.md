@@ -97,7 +97,7 @@ While building it I found that the municipality's GTFS `stop_times.csv` was cut 
 
 ### Research and community
 
-**[NanoSpace Knowledge Hub](https://nanospacekh.erbaharlab.com)**: an open-access database of cosmic carbon nanostructures built by the Erbahar Research Lab for EU COST Action CA21126. I joined at the NanoSpace DSG Hackathon (July 2025, Istanbul) in the front-end breakout group, which drafted designs for the homepage and the molecule record page ([meeting report](https://research.iac.es/proyecto/nanospace/media/Working_Group_meetings/report_DSG_meeting_final.pdf)). Later I implemented the first SvelteKit version of the homepage design (hero, search bar, features, latest-compounds and quick-tools sections), which the lab's lead developer has since extended. The code is private to the lab.
+**[NanoSpace Knowledge Hub](https://nanospacekh.erbaharlab.com)**: an open-access database of cosmic carbon nanostructures built by the Erbahar Research Lab for the EU-funded COST Action CA21126. I joined at the NanoSpace DSG Hackathon (July 2025, Istanbul) in the front-end breakout group, which drafted designs for the homepage and the molecule record page ([meeting report](https://research.iac.es/proyecto/nanospace/media/Working_Group_meetings/report_DSG_meeting_final.pdf)). Later I implemented the first SvelteKit version of the homepage design (hero, search bar, features, latest-compounds and quick-tools sections), which the lab's lead developer has since extended. The code is private to the lab.
 
 **[Hypnose](https://alierenkayhan.itch.io/hypnose)**: in Google's Game and Application Academy (2022 to 2023) I was Scrum Master of Team Zeniths. Over three documented sprints we built a first-person mystery game in Unity HDRP, and I built the level map and much of the game. We shared most of the work through Google Drive, so my part is not in the [repository](https://github.com/muratcan-ates/U-16-OUA-BOOTCAMP)'s commit history; the itch.io page credits me as muratcanatess.
 
@@ -107,7 +107,7 @@ While building it I found that the municipality's GTFS `stop_times.csv` was cut 
 
 - **Data Engineering Intern, EPAM Systems** (Jul to Aug 2026): built a PostgreSQL data warehouse integrating two sales sources, with SQL ETL and a Power BI report.
 - **AI Engineering Intern, Microsoft Türkiye** (Jun to Jul 2026): AI Innovators program; İstanbul Nabız, above, is my program project.
-- **Volunteer Software Developer, NanoSpace** (Jul 2025 to Sep 2026): SvelteKit front-end work for a research database within COST Action CA21126.
+- **Volunteer Software Developer, NanoSpace** (Jul 2025 to Sep 2026): SvelteKit front-end work for a research database within the EU-funded COST Action CA21126.
 - **IT and Network Infrastructure Intern** (Aug to Sep 2025): built an attendance-tracking app in C# WinForms and SQLite.
 - **TEI Aviation Engines School** (Havacılık Motorları Okulu, Jan to May 2026): 16-week program on gas turbines, engine controls, power systems, manufacturing and testing, completed with a certificate of achievement.
 - Google AI and Technology Academy, Data Science Fellow (2025 to 2026) · Huawei Cloud AI Bootcamp (2025) · Microsoft Learn Student Ambassador · GDG on Campus Doğuş core team, web development
