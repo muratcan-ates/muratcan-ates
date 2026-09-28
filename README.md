@@ -63,22 +63,26 @@ Course isolation is enforced twice: first by an API membership check, then by Po
 
 ### [İstanbul Nabız](https://github.com/muratcan-ates/istanbul-nabiz)
 
-<a href="https://github.com/muratcan-ates/istanbul-nabiz"><img src="./assets/istanbul-nabiz-banner.jpg" width="100%" alt="İstanbul Nabız banner: a pulse line with beats labeled İSPARK, İETT, Metro, Traffic and Air" /></a>
+<a href="https://github.com/muratcan-ates/istanbul-nabiz"><img src="./assets/istanbul-nabiz-banner-v2.png" width="100%" alt="İstanbul Nabız: a city assistant for İstanbul's open data, with the citizen app, simulated operator console, accessible journeys, source-backed answers and 18 MCP tools" /></a>
 
 **Microsoft AI Engineering Internship, AI Innovators program** · Solo project · September 2026
 
-İstanbul Nabız is an unofficial MCP server over İstanbul's live open data. Its fifteen tools cover İSPARK car parks, İETT bus positions and timetables, Metro İstanbul service status and station accessibility, the traffic index and air quality. Every result carries its source URL and fetch time. The tests start the server as a subprocess, perform the MCP handshake, check that every tool is listed with a usable schema and call several of them end to end over stdio, the way a client would.
+İstanbul Nabız is an independent city assistant built on İBB's open data. The current local build brings together a Turkish and English citizen app, accessibility checks for journeys, an easy-read screen, spoken answers and a weekly calendar. Answers carry their source and observation time. A separate **simulated operator console** uses NEXUS to review evidence, require human approval and record decisions in a hash-chained ledger. It is a student project, not an official İBB service.
 
-While building it I found that the municipality's GTFS `stop_times.csv` was cut off at Excel's row limit (1,048,575 rows plus a header) and had no rows at all for line 500T. Switching to the full export placed all 31 live 500T buses on their route. Measured against 1,351 observed arrivals, the bus arrival estimate the tools serve is off by about 13 minutes on average. A per-line calibration looked better on the data it was fitted to but did worse on later arrivals (35.8 against 10.2 minutes), so the tools keep the untuned rate. Both results are still too high, and the repository publishes them. The Azure infrastructure is written in Bicep and compiles in CI but is not deployed yet. This is an independent student project, not an official İBB service.
+Underneath are **18 MCP tools**, a shared rate-limited client and a collector that keeps the history the live endpoints do not. I repaired a GTFS export truncated at Excel's row limit and publish the bus estimator's limitations: **12.94 minutes mean absolute error across 1,351 observed arrivals**. A calibration performed worse on held-out data, so the tools retain the untuned rate. MCP integration tests exercise the handshake, tool schemas and calls through a real client over stdio.
 
-[Use it from an MCP client](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/mcp-usage.md) / [ETA accuracy report](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/eval/results/eta.md) / [Architecture](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/architecture.svg)
+The app and console work locally. The Azure infrastructure is written in Bicep but not deployed, and the optional language-model path has not yet been evaluated with a real model.
+
+[Development branch](https://github.com/muratcan-ates/istanbul-nabiz/tree/gun2/entegrasyon) / [MCP client guide](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/mcp-usage.md) / [ETA accuracy report](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/eval/results/eta.md) / [Architecture](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/architecture.svg)
 
 <details>
-<summary>Screens: offline demo on recorded İBB data</summary>
+<summary>Screens: current local citizen app and simulated operator console</summary>
 <br />
-<img src="./assets/istanbul-nabiz-parking.jpg" width="100%" alt="İstanbul Nabız web page answering 'Is there parking near Taksim?' with three İSPARK car parks, free spaces, how long ago each reading was measured, and a map" />
+<p><strong>Citizen assistant.</strong> The current start screen, with Asistan, Takvim and Hesabım navigation, accessibility options and example questions. Captured from the local app on 28 September 2026.</p>
+<img src="./assets/istanbul-nabiz-assistant.png" width="100%" alt="Current İstanbul Nabız citizen app: İstanbul'a sorun heading, a question composer, accessible journey and city-service suggestions, language controls and Asistan, Takvim and Hesabım navigation" />
 <br /><br />
-<img src="./assets/istanbul-nabiz-air.jpg" width="100%" alt="İstanbul Nabız answering 'How is the air in Beşiktaş?' with the station AQI, pollutant values and a six-hour PM10 outlook" />
+<p><strong>Operator console (demo).</strong> The decision desk and signal queue with a selected example scenario awaiting human review. This screen uses sample data; it is not a live municipal operation.</p>
+<img src="./assets/istanbul-nabiz-console-demo.png" width="100%" alt="Current Nabız simulated operator console: Karar masası, a signal-to-evidence-to-human-approval workflow, a signal queue and a decision card for a sample lift outage, visibly labelled as example data" />
 </details>
 
 ## More projects
