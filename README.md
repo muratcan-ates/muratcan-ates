@@ -1,127 +1,130 @@
 <picture>
-  <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg?v=navy-20261001" />
-  <img src="./assets/hero.svg?v=navy-20261001" width="100%" alt="Muratcan Ateş — Computer Engineering, AI and cloud" />
+  <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg" />
+  <img src="./assets/hero.svg" width="100%" alt="Muratcan Ateş, Computer Engineering student at Doğuş University building AI and cloud systems" />
 </picture>
 
-I'm a final-year Computer Engineering student at Doğuş University in Istanbul. I work on Python APIs, retrieval-augmented assistants and MCP tools. I use AI coding agents for implementation, with written specs, code review, tests and CI checks.
+# Muratcan Ateş
 
-[LinkedIn](https://linkedin.com/in/muratcanates) · [Medium](https://medium.com/@muratcanates) · [g.dev](https://g.dev/muratcanates) · [Repositories](https://github.com/muratcan-ates?tab=repositories)
+Final-year Computer Engineering student at Doğuş University in Istanbul, focused on AI and cloud engineering. I build Python APIs, retrieval-augmented assistants and MCP tools, usually together with AI coding agents working inside specs, tests and CI checks that I set up. I like systems that can show their work: answers that cite a source, decisions that leave an audit trail, and tests that are proven to fail when the code breaks.
 
-## Selected projects
+[LinkedIn](https://linkedin.com/in/muratcanates) / [Medium](https://medium.com/@muratcanates) / [g.dev](https://g.dev/muratcanates) / [All repositories](https://github.com/muratcan-ates?tab=repositories)
+
+## GitHub, in numbers
+
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/metrics-mobile.svg" />
+  <img src="./assets/metrics.svg" width="100%" alt="GitHub numbers: contributions in the last year, commits in public repositories, pull requests merged in team repositories, public project repositories and primary languages" />
+</picture>
+
+<sub>Refreshed every Monday from the public GitHub API by a workflow in this repository. Pull requests are counted in my team repositories. Forks, archived and empty repositories and this profile repository are left out.</sub>
+
+## Featured
 
 ### [CloudSentinel](https://github.com/muratcan-ates/cloudsentinel)
 
-<a href="https://github.com/muratcan-ates/cloudsentinel">
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/cloudsentinel-banner-mobile.svg" />
-  <img src="./assets/cloudsentinel-banner.svg" width="100%" alt="CloudSentinel — cloud cost and security anomaly review" />
-</picture>
-</a>
+<a href="https://github.com/muratcan-ates/cloudsentinel"><img src="./assets/cloudsentinel-banner.jpg" width="100%" alt="CloudSentinel banner: the machine watches, the human decides" /></a>
 
-**YZTA Bootcamp 2026 · Scrum Master · team of four · June–August 2026**
+**YZTA Bootcamp 2026, AI track, Group 60** · Scrum Master in a team of four · June to August 2026
 
-Cloud cost and security anomaly review. A statistical detector flags signals; agents explain the evidence and propose responses for human approval. Decisions are recorded in a hash-chained audit ledger. I built the LLM provider layer, analyst and recommender agents, approval lifecycle, ledger and deployment.
+CloudSentinel is decision support for cloud cost and security anomalies. A deterministic statistical detector flags a signal. An analyst agent explains it with cited evidence rows, and a recommender drafts a cautious and a bold option whose savings are computed in Python. A skeptic, or a three-seat review panel, challenges contested drafts. Nothing moves until a human approves or rejects (execution is simulated), and each verdict is sealed into a SHA-256 hash chain that `GET /audit/verify` recomputes from the first entry.
 
-The public demo uses simulated data and a deterministic model stand-in. Approved actions are simulated.
+I own the repository. My commits added the LLM provider layer, the analyst and recommender agents, the approval lifecycle, the ledger and the Render deployment. My teammates added the cost-summary, health and market-watch endpoints and the first CI workflow in eight pull requests, which I merged. At the final commit, CI passes 1,321 tests and the API exposes 59 documented paths.
 
-[Demo](https://cloudsentinel-y5zh.onrender.com) · [API](https://cloudsentinel-y5zh.onrender.com/docs) · [Architecture](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/architecture.md) · [Evaluation](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/EVAL_SCORECARD.md) · [Limitations](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/LIMITATIONS.md)
+[Live demo (read-only, simulated data, deterministic stand-in for the model)](https://cloudsentinel-y5zh.onrender.com) / [API docs](https://cloudsentinel-y5zh.onrender.com/docs) / [Architecture](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/architecture.md) / [Eval scorecard](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/EVAL_SCORECARD.md) / [Limitations](https://github.com/muratcan-ates/cloudsentinel/blob/main/docs/LIMITATIONS.md)
 
 <details>
-<summary>Operator dashboard</summary>
+<summary>Screen: the operator dashboard (simulated data)</summary>
 <br />
-<img src="./assets/cloudsentinel-dashboard.jpg" width="100%" alt="CloudSentinel dashboard with simulated spending, anomaly signals and proposals awaiting review" />
+<img src="./assets/cloudsentinel-dashboard.jpg" width="100%" alt="CloudSentinel operator dashboard on simulated data: total spend 4,865.30 USD, two open signals, six proposals awaiting a human, 10,346.91 USD per month in approved savings, and the z-score sensitivity control" />
 </details>
 
 ### [DOU-Synapse](https://github.com/muratcan-ates/DOU-Synapse)
 
-<a href="https://github.com/muratcan-ates/DOU-Synapse">
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/dou-synapse-banner-mobile.svg" />
-  <img src="./assets/dou-synapse-banner.svg" width="100%" alt="DOU-Synapse — course material, cited answers and guided learning" />
-</picture>
-</a>
+<a href="https://github.com/muratcan-ates/DOU-Synapse"><img src="./assets/dou-synapse-banner.jpg" width="100%" alt="Synapse banner: a human hand and a robotic hand about to touch" /></a>
 
-**Graduation project, Doğuş University · project lead · team of three · August–September 2026**
+**Graduation project, Doğuş University** · Project lead in a team of three · August to September 2026
 
-A course and exam assistant that answers from instructor-uploaded material, citing the file and page. Socratic mode gives hints before an explanation. I led the project and implemented the Next.js frontend and FastAPI backend. Retrieval combines PostgreSQL full-text search and pgvector; API membership checks and row-level security enforce course isolation.
+DOU-Synapse is a course and exam assistant built to answer only from material the instructor uploads, showing the file and page behind each answer. When no passage clears the evidence threshold, it refuses without calling the language model; that threshold is still being tuned. In Socratic mode it holds back the answer and gives graded hints, moving to a sourced explanation only after the student has made real attempts.
 
-The assistant refuses when retrieved evidence falls below its threshold. That threshold is still being tuned.
+I led the team and built the system myself across the Next.js frontend and the FastAPI backend (530 of the 545 commits on main), writing much of the code with AI coding agents that work under written agent instructions and a change-dossier check in CI.
 
-[Architecture (TR)](https://github.com/muratcan-ates/DOU-Synapse/blob/main/ARCHITECTURE.md) · [Isolation checks](https://github.com/muratcan-ates/DOU-Synapse/blob/main/supabase/tests/rls_isolation.sql) · [Test report (TR)](https://github.com/muratcan-ates/DOU-Synapse/blob/main/docs/test-report.md)
+Course isolation is enforced twice: first by an API membership check, then by PostgreSQL row-level security. On every CI run the pipeline deliberately breaks one RLS policy and requires the isolation tests to fail. Retrieval combines pgvector HNSW search with PostgreSQL full-text search through reciprocal rank fusion. In the latest CI run on main, 2,197 backend tests and 684 frontend unit tests pass; the browser end-to-end job has been failing on main since 14 September.
+
+[Architecture (Turkish)](https://github.com/muratcan-ates/DOU-Synapse/blob/main/ARCHITECTURE.md) / [RLS isolation test](https://github.com/muratcan-ates/DOU-Synapse/blob/main/supabase/tests/rls_isolation.sql) / [Test report (Turkish)](https://github.com/muratcan-ates/DOU-Synapse/blob/main/docs/test-report.md)
 
 <details>
-<summary>Cited answer and source context — offline demo</summary>
+<summary>Screens: a cited answer (offline demo generator) and its source context</summary>
 <br />
-<img src="./assets/dou-synapse-03-course-chat.jpg" width="100%" alt="DOU-Synapse course chat with page references from a course PDF" />
-<br /><br />
-<img src="./assets/dou-synapse-04-citation-context.jpg" width="100%" alt="The cited passage and its surrounding source context" />
+<img src="./assets/dou-synapse-03-course-chat.jpg" width="49%" alt="DOU-Synapse course chat answering a deadlock question with source cards for page 1 and page 2 of the course PDF" />
+<img src="./assets/dou-synapse-04-citation-context.jpg" width="49%" alt="DOU-Synapse citation context view showing the cited passage with its surrounding chunks" />
 </details>
+
+## Microsoft AI Engineering Internship
 
 ### [İstanbul Nabız](https://github.com/muratcan-ates/istanbul-nabiz)
 
-<a href="https://github.com/muratcan-ates/istanbul-nabiz">
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/istanbul-nabiz-banner-mobile.svg" />
-  <img src="./assets/istanbul-nabiz-banner.svg" width="100%" alt="İstanbul Nabız — a city assistant using İstanbul's open data" />
-</picture>
-</a>
+<a href="https://github.com/muratcan-ates/istanbul-nabiz"><img src="./assets/istanbul-nabiz-banner-v2.png" width="100%" alt="İstanbul Nabız: a city assistant for İstanbul's open data, with the citizen app, simulated operator console, accessible journeys, source-backed answers and 18 MCP tools" /></a>
 
-**Microsoft AI Innovators program · solo project · September 2026**
+**Microsoft AI Engineering Internship, AI Innovators program** · Solo project · September 2026
 
-An independent city assistant using İBB open data, with Turkish and English screens, accessible journey checks and spoken answers. Its 18 MCP tools share a rate-limited client and a historical data collector. Answers include their source and observation time; a simulated operator console supports evidence review and human approval.
+İstanbul Nabız is an independent city assistant built on İBB's open data. The current local build brings together a Turkish and English citizen app, accessibility checks for journeys, an easy-read screen, spoken answers and a weekly calendar. Answers carry their source and observation time. A separate **simulated operator console** uses NEXUS to review evidence, require human approval and record decisions in a hash-chained ledger. It is a student project, not an official İBB service.
 
-The app runs locally. Azure infrastructure is written but undeployed, and the optional LLM path has not been evaluated with a real model. This is a student project, not an official İBB service. The bus arrival estimator's accuracy and limitations are documented below.
+Underneath are **18 MCP tools**, a shared rate-limited client and a collector that keeps the history the live endpoints do not. I repaired a GTFS export truncated at Excel's row limit and publish the bus estimator's limitations: **12.94 minutes mean absolute error across 1,351 observed arrivals**. A calibration performed worse on held-out data, so the tools retain the untuned rate. MCP integration tests exercise the handshake, tool schemas and calls through a real client over stdio.
 
-[Development branch](https://github.com/muratcan-ates/istanbul-nabiz/tree/gun2/entegrasyon) · [MCP guide](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/mcp-usage.md) · [Arrival estimates](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/eval/results/eta.md) · [Architecture](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/architecture.svg)
+The app and console work locally. The Azure infrastructure is written in Bicep but not deployed, and the optional language-model path has not yet been evaluated with a real model.
+
+[Development branch](https://github.com/muratcan-ates/istanbul-nabiz/tree/gun2/entegrasyon) / [MCP client guide](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/mcp-usage.md) / [ETA accuracy report](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/eval/results/eta.md) / [Architecture](https://github.com/muratcan-ates/istanbul-nabiz/blob/main/docs/architecture.svg)
 
 <details>
-<summary>Local citizen app and simulated operator console</summary>
+<summary>Screens: current local citizen app and simulated operator console</summary>
 <br />
-<img src="./assets/istanbul-nabiz-assistant.png" width="100%" alt="İstanbul Nabız local citizen app with a question composer, city-service suggestions and accessibility controls" />
+<p><strong>Citizen assistant.</strong> The current start screen, with Asistan, Takvim and Hesabım navigation, accessibility options and example questions. Captured from the local app on 28 September 2026.</p>
+<img src="./assets/istanbul-nabiz-assistant.png" width="100%" alt="Current İstanbul Nabız citizen app: İstanbul'a sorun heading, a question composer, accessible journey and city-service suggestions, language controls and Asistan, Takvim and Hesabım navigation" />
 <br /><br />
-<img src="./assets/istanbul-nabiz-console-demo.png" width="100%" alt="İstanbul Nabız operator console showing sample data and an example decision awaiting human review" />
+<p><strong>Operator console (demo).</strong> The decision desk and signal queue with a selected example scenario awaiting human review. This screen uses sample data; it is not a live municipal operation.</p>
+<img src="./assets/istanbul-nabiz-console-demo.png" width="100%" alt="Current Nabız simulated operator console: Karar masası, a signal-to-evidence-to-human-approval workflow, a signal queue and a decision card for a sample lift outage, visibly labelled as example data" />
 </details>
 
-## Other work
+## More projects
 
-- **[OtoHesap](https://github.com/muratcan-ates/Oto-Hesap)** — small-business finance dashboard, team of four. I built the API core and read-only text-to-SQL assistant, and set up architecture and CI.
-- **[innova](https://github.com/muratcan-ates/innova)** — EPAM bootcamp idea-evaluation portal. I defined the architecture and reviewed the implementation produced by Claude Code.
-- **[telco-churn](https://github.com/muratcan-ates/telco-churn)** — scikit-learn churn pipeline and FastAPI prediction endpoint with SHAP explanations, built in a three-person team.
-- **[YZTA datathon](https://github.com/muratcan-ates/yzta-datathon-grup-27)** — repository setup and feature-engineering integration for a five-person team.
-- **[NanoSpace Knowledge Hub](https://nanospacekh.erbaharlab.com)** — homepage design and initial SvelteKit implementation for the Erbahar Research Lab's cosmic carbon database. [Hackathon report](https://research.iac.es/proyecto/nanospace/media/Working_Group_meetings/report_DSG_meeting_final.pdf).
-- **[Hypnose](https://alierenkayhan.itch.io/hypnose)** — Unity HDRP mystery game; Scrum Master and level development with Team Zeniths.
-- **[GDG on Campus Doğuş](https://github.com/gdg-dogus/gdg-dou-website)** — web development team; my [blog page](https://github.com/gdg-dogus/gdg-dou-website/commit/54d7012) became the site's blog base.
+### Applied AI and full-stack
 
-## Experience
+**[OtoHesap](https://github.com/muratcan-ates/Oto-Hesap)**: a finance and stock dashboard for small businesses, built by a team of four for Medeniyet Teknopark's TeknoKampüs Arena (September 2026). I set up the architecture, repository, spec and CI and built the API core and the text-to-SQL assistant with AI coding agents; teammates owned the web UI, the procurement agent with its Telegram bot, and the data work. A Turkish question becomes SQL, which is checked against a sqlglot allow-list and run in a read-only transaction with a five-second timeout. A rule-based restocking agent (no LLM) sends a supplier order over Telegram only after a person approves it. 185 API tests pass in CI.
 
-- **EPAM Systems · Data Engineering Intern** — July–August 2026. PostgreSQL warehouse, SQL ETL and Power BI.
-- **Microsoft Türkiye · AI Engineering Intern** — June–July 2026. AI Innovators program.
-- **NanoSpace · Volunteer Software Developer** — July 2025–September 2026. Research database frontend.
-- **IT and Network Infrastructure Intern** — August–September 2025. Attendance app in C# and SQLite.
+**[innova](https://github.com/muratcan-ates/innova)**: my individual diploma project for EPAM's AI-Native Engineering bootcamp (May 2026), an idea submission and evaluation portal with submitter and evaluator roles and an append-only evaluation history. I made the architecture decisions and reviewed the work, and Claude Code wrote the code. A constitution and a spec became 58 tasks, which it implemented in one overnight session. The stack is Next.js 15, Auth.js v5 and Prisma.
 
-<details>
-<summary>Programs and community</summary>
+### Data and machine learning
 
-TEI Aviation Engines School (January–May 2026); Google AI and Technology Academy, Data Science Fellow (2025–2026); Huawei Cloud AI Bootcamp (2025); Microsoft Learn Student Ambassador; GDG on Campus Doğuş core team, web development.
+**[telco-churn](https://github.com/muratcan-ates/telco-churn)**: a churn prediction service from a three-person team in the YZTA 5.0 data science challenge (April 2026). I wrote the scikit-learn pipeline and an MLflow script comparing three models. I also built a FastAPI `/predict` endpoint that returns the churn probability with its five strongest SHAP factors. The logistic regression, chosen over random forest and gradient boosting on a stratified 20% test split, scores ROC-AUC 0.842 on that split.
 
-</details>
+**[yzta-datathon-grup-27](https://github.com/muratcan-ates/yzta-datathon-grup-27)**: our five-person team's entry in the YZTA datathon (May 2026). I set up the team repository and merged my teammates' feature-engineering pull requests.
 
-## Technologies
+### Research and community
+
+**[NanoSpace Knowledge Hub](https://nanospacekh.erbaharlab.com)**: an open-access database of cosmic carbon nanostructures built by the Erbahar Research Lab for the EU-funded COST Action CA21126. I joined at the NanoSpace DSG Hackathon (July 2025, Istanbul) in the front-end breakout group, which drafted designs for the homepage and the molecule record page ([meeting report](https://research.iac.es/proyecto/nanospace/media/Working_Group_meetings/report_DSG_meeting_final.pdf)). Later I implemented the first SvelteKit version of the homepage design (hero, search bar, features, latest-compounds and quick-tools sections), which the lab's lead developer has since extended. The code is private to the lab.
+
+**[Hypnose](https://alierenkayhan.itch.io/hypnose)**: in Google's Game and Application Academy (2022 to 2023) I was Scrum Master of Team Zeniths. Over three documented sprints we built a first-person mystery game in Unity HDRP, and I built the level map and much of the game. We shared most of the work through Google Drive; the itch.io page credits me as muratcanatess.
+
+**[GDG on Campus Doğuş website](https://github.com/gdg-dogus/gdg-dou-website)**: I'm credited in the repository as a member of the 2025–2026 web development team, and my [blog page commit](https://github.com/gdg-dogus/gdg-dou-website/commit/54d7012) became the base of the site's blog.
+
+## Experience and programs
+
+- **Data Engineering Intern, EPAM Systems** (Jul to Aug 2026): built a PostgreSQL data warehouse integrating two sales sources, with SQL ETL and a Power BI report.
+- **AI Engineering Intern, Microsoft Türkiye** (Jun to Jul 2026): AI Innovators program; İstanbul Nabız, above, is my program project.
+- **Volunteer Software Developer, NanoSpace** (Jul 2025 to Sep 2026): SvelteKit front-end work for a research database within the EU-funded COST Action CA21126.
+- **IT and Network Infrastructure Intern** (Aug to Sep 2025): built an attendance-tracking app in C# WinForms and SQLite.
+- **TEI Aviation Engines School** (Havacılık Motorları Okulu, Jan to May 2026): 16-week program on gas turbines, engine controls, power systems, manufacturing and testing, completed with a certificate of achievement.
+- Google AI and Technology Academy, Data Science Fellow (2025 to 2026) · Huawei Cloud AI Bootcamp (2025) · Microsoft Learn Student Ambassador · GDG on Campus Doğuş core team, web development
+
+## Toolchain
 
 <picture>
-  <source media="(max-width: 640px)" srcset="./assets/toolchain-mobile.svg?v=navy-20261001" />
-  <img src="./assets/toolchain.svg?v=navy-20261001" width="100%" alt="Development: Python, FastAPI, TypeScript and Next.js. Data and AI: PostgreSQL, pgvector, scikit-learn and MCP. Cloud and delivery: Azure, Docker, Bicep and GitHub Actions." />
+  <source media="(max-width: 640px)" srcset="./assets/toolchain-mobile.svg" />
+  <img src="./assets/toolchain.svg" width="100%" alt="Toolchain: Python, FastAPI, TypeScript, Next.js, PostgreSQL, pgvector, SQL ETL, Power BI, RAG, MCP, LLM agents, scikit-learn, Azure, Bicep, Docker, Render, pytest, Bun test, Ruff, GitHub Actions" />
 </picture>
-
-## GitHub activity
-
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/metrics-mobile.svg?v=navy-20261001" />
-  <img src="./assets/metrics.svg?v=navy-20261001" width="100%" alt="GitHub activity: profile contributions, public commits, public merged pull requests, project repositories and primary languages" />
-</picture>
-
-<sub>Updated weekly. Contributions follow the profile calendar; commits and merged pull requests cover public repositories. Project and language totals exclude forks, archived and empty repositories and this profile repository. Language shares count repositories, not lines of code.</sub>
 
 ## Contact
 
-For internships or project enquiries, reach me on [LinkedIn](https://linkedin.com/in/muratcanates).
+For internships, projects or a conversation about AI and cloud systems, reach me on [LinkedIn](https://linkedin.com/in/muratcanates).
+
+<sub>Profile artwork is generated by the scripts in [`.github/scripts`](.github/scripts). Text is set in [Geist](https://github.com/vercel/geist-font) under the SIL Open Font License. The CloudSentinel and DOU-Synapse banners use those projects' own brand art.</sub>
