@@ -1,6 +1,6 @@
 <picture>
-  <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg" />
-  <img src="./assets/hero.svg" width="100%" alt="Muratcan Ateş — Computer Engineering, AI and cloud" />
+  <source media="(max-width: 640px)" srcset="./assets/hero-mobile.svg?v=navy-20261001" />
+  <img src="./assets/hero.svg?v=navy-20261001" width="100%" alt="Muratcan Ateş — Computer Engineering, AI and cloud" />
 </picture>
 
 I'm a final-year Computer Engineering student at Doğuş University in Istanbul. I work on Python APIs, retrieval-augmented assistants and MCP tools. I use AI coding agents for implementation, with written specs, code review, tests and CI checks.
@@ -109,15 +109,15 @@ TEI Aviation Engines School (January–May 2026); Google AI and Technology Acade
 ## Technologies
 
 <picture>
-  <source media="(max-width: 640px)" srcset="./assets/toolchain-mobile.svg" />
-  <img src="./assets/toolchain.svg" width="100%" alt="Development: Python, FastAPI, TypeScript and Next.js. Data and AI: PostgreSQL, pgvector, scikit-learn and MCP. Cloud and delivery: Azure, Docker, Bicep and GitHub Actions." />
+  <source media="(max-width: 640px)" srcset="./assets/toolchain-mobile.svg?v=navy-20261001" />
+  <img src="./assets/toolchain.svg?v=navy-20261001" width="100%" alt="Development: Python, FastAPI, TypeScript and Next.js. Data and AI: PostgreSQL, pgvector, scikit-learn and MCP. Cloud and delivery: Azure, Docker, Bicep and GitHub Actions." />
 </picture>
 
 ## GitHub activity
 
 <picture>
-  <source media="(max-width: 640px)" srcset="./assets/metrics-mobile.svg" />
-  <img src="./assets/metrics.svg" width="100%" alt="GitHub activity: profile contributions, public commits, public merged pull requests, project repositories and primary languages" />
+  <source media="(max-width: 640px)" srcset="./assets/metrics-mobile.svg?v=navy-20261001" />
+  <img src="./assets/metrics.svg?v=navy-20261001" width="100%" alt="GitHub activity: profile contributions, public commits, public merged pull requests, project repositories and primary languages" />
 </picture>
 
 <sub>Updated weekly. Contributions follow the profile calendar; commits and merged pull requests cover public repositories. Project and language totals exclude forks, archived and empty repositories and this profile repository. Language shares count repositories, not lines of code.</sub>
